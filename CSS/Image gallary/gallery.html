@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: minmax(250px,auto);
+            gap: 5px;
+            padding: 0 15px;
+        }
+        .image1{
+            background: url(image/image1.jfif)center center/cover;
+            /* grid-column: 1/3; */
+            grid-row: 1/3;
+        }
+        .image2{
+            background: url(image/image2.jfif);
+            background-size: cover;
+            grid-column: 2/4;
+            /* grid-row: 1/3; */
+        }
+        .image3{
+            background: url(image/image3.jfif);
+            background-size: cover;
+        }
+        .image4 {
+            background: url(image/image4.jfif);
+            background-size: cover;
+            grid-column: 3;
+            grid-row: 3/5;
+        }
+        .image5 {
+            background: url(image/image5.jfif);
+            background-size: cover;
+        }
+        .image6 {
+            background: url(image/image6.jfif);
+            background-size: cover;
+            /* grid-column: 3; */
+            /* grid-row: 3/5; */
+        }
+        .image7{
+            background: url(image/image7.jfif);
+            background-size: cover;
+            grid-column: 3;
+            grid-row: 3/5;
+        }
+        .image8{
+            background: url(image/image8.jfif);
+            background-size: cover;
+            grid-column: 2;
+            grid-row: 3/5;
+        }
+        .image9{
+            background: url(image/image9.jfif);
+            background-size: cover;
+            /* grid-column: 3; */
+            /* grid-row: 1/3; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image1">image1</div>
+        <div class="image2">image2</div>
+        <div class="image3">image3</div>
+        <div class="image4">image4</div>
+        <div class="image5">image5</div>
+        <div class="image6">image6</div>
+        <div class="image7">image7</div>
+        <div class="image8">image8</div>
+        <div class="image9">image9</div>
+    </div>
+</body>
+</html>
