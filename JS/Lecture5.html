@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Name</label>
+    <input type="text" class="name" id="name"> <br> <br>
+    <label for="email">Email</label>
+    <input type="text" class="email" id="email"> <br> <br>
+    <label for="password">Password</label>
+    <input type="text" class="pass" id="password"> <br><br>
+    <label for="gender">Gender</label>
+    <input type="radio" class="gen" id="gender">Male
+    <input type="radio" class="gen" id="gender">Female
+    <br><br>
+    <button onclick="display()">Submmit</button>
+
+    
+</body>
+</html>
+<script>
+    function display()
+    {
+        let nm=document.getElementById('name').value;
+        let email=document.getElementById('email').value;
+        let pass=document.getElementById('password').value;
+        let gen=document.getElementById('gender').value;
+
+        console.log(`Welcome ${nm} your email id is ${email}`);
+
+        console.log(`your password is : ${pass}`);
+        console.log(`your gender is ${gen}`);
+
+        document.write(`your gender is ${gen}`)
+
+
+        if(isNaN(nm))
+        {
+            return true;
+        }
+        else{
+            return false;
+            console.log(`Entered name is numeric: not allowed here`);
+        }
+
+    }
+
+
+
+    // Function : perform a particular task
+
+    console.log();
+    console.dir();
+
+
+    console.log("Hello World");
+    console.warn("this is warning for you");
+    console.error("this is an error");
+
+    console.log(document);
+
+    // concole.logdir(document);
+
+    console.log(document.URL);
+
+    console.log(document.domain);
+
+    let st="welcome to HTML ";
+
+
+    // let X=254;
+    // let res=X.toUpperCase();
+    // console.log(res);
+
+
+    // logical operator :-
+
+
+    let x=25;
+    let y=35;
+    let z=45;
+
+    let res=(x>y && x>z)?x: (y>z && y>x)?y:z;
+    console.log(`Greatest among three numbers are: ${res}`);
+
+
+
+</script>
