@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
+<style>  
+
+
+    /* concept 1 :
+
+    body{
+        background: #333;
+    }
+    .box{
+        background: #fff;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        animation-name: myanimation;
+        animation-duration: 5s;
+    }
+    @keyframes myanimation{
+        0%{background-color: #fff;}
+        25%{background-color: darkolivegreen;}
+        50%{background-color: darkcyan; }
+        75%{background-color: darksalmon;}
+        100%{background-color: #fff;}
+    } */
+
+
+
+     /* concept 2 :
+
+     body{
+        background: #333;
+    }
+    .box{
+        background: #fff;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        animation-name: myanimation;
+        animation-duration: 5s;
+    }
+    @keyframes myanimation{
+        0%{background-color: #fff;left:0;top:0;}
+        25%{background-color: darkolivegreen;left:300px;top:0;}
+        50%{background-color: darkcyan;left:300px;top:300px; }
+        75%{background-color: darksalmon;left:0;top:300px;}
+        100%{background-color: #fff;left:0;top:0;}
+    } */
+
+
+
+    /* concept 3 :
+
+    body{
+        background: #333;
+    }
+    .box{
+        background: #fff;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        animation-name: myanimation;
+        animation-duration: 10s;
+    }
+    @keyframes myanimation{
+        0%{background-color: #fff;left:0;top:0;border-radius: 0 0 0 0;}
+        25%{background-color: darkolivegreen;left:300px;top:0;border-radius: 50% 0 0 0;}
+        50%{background-color: darkcyan;left:300px;top:300px;border-radius: 50% 50% 0 0; }
+        75%{background-color: darksalmon;left:0;top:300px; border-radius: 50% 50% 50% 0;}
+        100%{background-color: #fff;left:0;top:0;border-radius: 50% 50% 50% 50%;}
+    } */
+
+
+
+    /* concept 4 :
+
+    body{
+        background: #333;
+    }
+    .box{
+        background: #fff;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        animation-name: myanimation;
+        animation-duration: 10s;
+        animation-delay: 2s;
+        animation-timing-function: liner;
+        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
+        animation-timing-function: ease-out;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-fill-mode: backwards;
+        animation-direction: reverse;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+
+
+    }
+    @keyframes myanimation{
+        0%{background-color: #fff;left:0;top:0;border-radius: 0 0 0 0;}
+        25%{background-color: darkolivegreen;left:300px;top:0;border-radius: 50% 0 0 0;}
+        50%{background-color: darkcyan;left:300px;top:300px;border-radius: 50% 50% 0 0; }
+        75%{background-color: darksalmon;left:0;top:300px; border-radius: 50% 50% 50% 0;}
+        100%{background-color: #fff;left:0;top:0;border-radius: 50% 50% 50% 50%;}
+    } */
+
+
+
+    /* Transition: */
+    /* concept 1:-
+
+    body{
+        background: #333;
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        background: #fff;
+        position: relative;
+        margin: auto;
+        top: 200px;
+        transition-property: background;
+        transition-duration: 3s;
+    }
+    .box:hover{
+        background-color: red;
+    } */
+
+
+     /* concept 2:- */
+
+     /* body{
+        background: #333;
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        background: #fff;
+        position: relative;
+        margin: auto;
+        top: 200px;
+        transition-property: background,border-radius;
+        transition-duration: 3s;
+    }
+    .box:hover{
+        background-color: red;
+        border-radius: 50%;
+    } */
+
+
+    /* concept:3; */
+    body{
+        background: #333;
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        background: #fff;
+        position: relative;
+        margin: auto;
+        top: 200px;
+        transition-property: background,border-radius,transform;
+        transition-duration: 2s ,5s;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+        transition-timing-function: ease-in;
+    }
+    .box:hover{
+        background-color: red;
+        border-radius: 50%;
+        transform:rotateY(180deg)
+    }
+</style>
