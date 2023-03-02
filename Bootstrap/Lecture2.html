@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Wel Come to Tops</h1>
+        <ul>
+            <li>Apple</li>
+            <li>Bahubali</li>
+            <li>Avenger</li>
+            <li>Movie</li>
+            <li>RRR</li>
+        </ul>
+    </div>
+
+
+    <script>
+        let hx=document.querySelectorAll('li');
+        let hd=document.getElementsByName('div');
+        // let hd=querySelector('div');
+
+
+        let ht=document.querySelector('h1');
+        ht.textContent="Bahubali ko kyon mara";
+        ht.innerText="Interview is real test";
+        ht.innerHTML="How are you";
+        ht.textContent="<h5>Bahubali ko kyon mara </h5>";
+        ht.innerText="<h5>Bahubali ko kyon mara </h5>";
+        ht.innerHTML="<h5>Bahubali ko kyon mara </h5>";
+        console.log(hd);
+        console.log(hx);
+
+        hx[0].textContent="Katappa";
+        hx[1].textContent="Katappa";
+        hx[2].textContent="Katappa";
+        hx[3].textContent="Katappa";
+        hx[4].textContent="Katappa";
+        
+        hx[0].style.background="#000";
+        hx[1].style.background="#000";
+        hx[2].style.background="#000";
+        hx[3].style.background="#000";
+        hx[4].style.background="#000";
+
+        hx[0].style.color="#fff";
+        hx[1].style.color="#fff";
+        hx[2].style.color="#fff";
+        hx[3].style.color="#fff";
+        hx[4].style.color="#fff";
+
+
+        hx[0].style.listStyleType="none";
+        hx[1].style.listStyleType="none";
+        hx[2].style.listStyleType="none";
+        hx[3].style.listStyleType="none";
+        hx[4].style.listStyleType="none";
+
+        ht.style.color="#fff";
+
+        hd.style.height="200px";
+        hd.style.width="200px";
+        hd.style.background="#000";
+        hd.style.margin="auto";
+
+
+        for (let i=0; i<5; i++)
+        {
+            hx[1].style.color="#fff";
+        }
+        
+
+        
+    </script>
+    
+</body>
+</html>
