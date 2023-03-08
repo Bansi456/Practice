@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    
+</head>
+<body>
+    <h1 class="heading">Welcome to jquery Programming</h1>
+    <h2 id="head">This is heading</h2>
+    <a href="#">Google.com</a>
+    <p class="paragraph">This is paragraph1</p>
+    <p class="paragraph">This is paragraph2</p>
+    <p id="para">This is paragraph</p>
+    <button id="btn">Click it</button>
+
+
+    <!-- jqueryselector:
+    class
+    id
+    element
+    universal -->
+
+
+    <script>
+
+        // $("selector").functions
+
+
+        // $(document).ready(function(){
+        //     alert("Hello jquery");
+        // });
+
+        // element selector:
+
+        // $("h1").css("color","red");
+
+
+        // class selector:
+
+        // $(".heading").css("color","red");  
+
+
+
+        // id selector;
+
+        // $("#head").css("color","coral");
+
+
+        // universal selector  
+
+        // $("*").css("color","coral");
+
+
+        // $("p").hide();
+
+
+
+        // jQuery("p").css("color","red");
+
+        // $(".paragraph").hide();
+
+        // $(".paragraph").hide();
+
+        $("#btn").click(function(){
+            $(".paragraph").hide();
+        });
+
+        $("#btn").click(function(){
+            $(this.hide());
+        });
+
+
+        
+        
+    </script>
+    
+</body>
+</html>
